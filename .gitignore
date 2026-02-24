@@ -5,4 +5,4 @@ Migrations/
 *.db
 *.db-shm
 *.db-wal
-.history/
+history/
