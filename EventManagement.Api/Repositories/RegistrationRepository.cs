@@ -34,7 +34,6 @@ public class RegistrationRepository : IRegistrationRepository
 
     public int GetEventCapacity(Guid eventId)
     {
-        // If event doesn't exist this will throw, but service checks exists first
         return _context.Events.Where(e => e.Id == eventId).Select(e => e.Capacity).First();
     }
 

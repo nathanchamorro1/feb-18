@@ -23,7 +23,6 @@ builder.Services.AddScoped<EventManagement.Api.Services.IRegistrationService, Ev
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
